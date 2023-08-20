@@ -1,12 +1,17 @@
+import { useState } from 'react';
 import './App.css';
 import { Navbar, Container, Nav, Card, Button} from 'react-bootstrap';
+import 작명 from './data.js';
 
 function App() {
+  
+  // Data.js 파일에서 가져 오기 위한 함수
+  let [card] = useState()
+  
   return (
     <div className='header_wrap'>
     <div className="App">
       <div className='nav_logo'>
-    
       <Navbar bg="primary" data-bs-theme="dark" className='won-nav'>
         <Container>
           <Navbar.Brand href="#home">WON</Navbar.Brand>
@@ -29,43 +34,7 @@ function App() {
       <div className='main-bg'></div>
 
       <br />
-      {/* <Carousel>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="https://cdn.wallpapersafari.com/24/37/K4wNkq.jpg"
-          alt="First slide"
-        />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="http://tdinteriorsinc.com/wp-content/uploads/2013/03/landscape-7-800x400.jpg"
-          alt="Second slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="https://cdn.wallpapersafari.com/24/37/K4wNkq.jpg"
-          alt="Third slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel> */}
+     
     <div className='card-parent'>
       <Card style={{ width: '36rem' }}>
         <Card.Img variant="top" src="./images/logo512.png/100px180" />
