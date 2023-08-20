@@ -19,6 +19,54 @@
   justify-content: space-around;
 }
 
+.main-bg {
+  height: 300px;
+  background-image: url('./slider01.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.card-parent {
+  display: flex;
+}
+
+.card-main{
+  width: 554px;
+  height: 325px;
+  border-radius: 15px;
+  opacity: 0.3;
+  background: #C3C6C9;
+  padding: 5px;
+  margin: 1px;
+}
+
+.card-main1{
+  width: 554px;
+  height: 325px;
+  border-radius: 15px;
+  opacity: 0.3;
+  background: #C3C6C9;
+  padding: 5px;
+  margin: 1px;
+}
+
+.card-product{
+  display:flex; 
+  height: 400px;
+  align-items: center;
+  padding: 0 0 0 0px;
+  width:100%;
+  height:max-content;
+  margin: 0 0 48px;
+  flex-direction: row;
+}
+
+d-block w-100{
+  height: 300px;
+  background-image: url('./slider01.jpg');
+  background-size: cover;
+  background-position: center;
+}
 
 .App-logo {
   height: 40vmin;

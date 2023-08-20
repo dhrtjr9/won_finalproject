@@ -1,11 +1,12 @@
 import './App.css';
-import { Navbar, Container, Nav, Carousel } from 'react-bootstrap';
+import { Navbar, Container, Nav, Card, Button} from 'react-bootstrap';
 
 function App() {
   return (
     <div className='header_wrap'>
     <div className="App">
       <div className='nav_logo'>
+    
       <Navbar bg="primary" data-bs-theme="dark" className='won-nav'>
         <Container>
           <Navbar.Brand href="#home">WON</Navbar.Brand>
@@ -14,14 +15,21 @@ function App() {
             <Nav.Link href="#credit">대출</Nav.Link>
             <Nav.Link href="#credit">보험</Nav.Link>
             <Nav.Link href="#credit">예적금</Nav.Link>
-            <Nav.Link href="#regist">회원가입</Nav.Link>
-            <Nav.Link href="#login">로그인</Nav.Link>
+
           </Nav>
+          <form class="d-flex">
+            <Nav.Link href="#regist">회원가입</Nav.Link>
+            <li></li>
+            <Nav.Link href="#login">로그인</Nav.Link>
+          </form>
         </Container>
       </Navbar>
       <br />
       
-      <Carousel>
+      <div className='main-bg'></div>
+
+      <br />
+      {/* <Carousel>
       <Carousel.Item>
         <img
           className="d-block w-100"
@@ -57,28 +65,92 @@ function App() {
           <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
         </Carousel.Caption>
       </Carousel.Item>
-    </Carousel>
+    </Carousel> */}
+    <div className='card-parent'>
+      <Card style={{ width: '36rem' }}>
+        <Card.Img variant="top" src="./images/logo512.png/100px180" />
+        <Card.Body>
+          <Card.Text>
+          비회원도 이용할 수 있는 신용카드 추천 서비스
+          나에게 적합한 카드는 무엇일까요?
+          </Card.Text>
+          <Button variant="primary">기본 추천 받기</Button>
+        </Card.Body>
+      </Card>
+      <li></li>
+      <Card style={{ width: '36rem' }}>
+        <Card.Img variant="top" src="holder.js/100px180" />
+        <Card.Body>
+          <Card.Text>
+          나와 적합한 신용카드와 카드 분석 리포트까지
+          지금 바로 이용해보세요
+          </Card.Text>
+          <Button variant="primary">회원 추천 받기</Button>
+        </Card.Body>
+      </Card>
+      
+      {/* <div className='card-main'></div>
+      <li></li>
+      <div className='card-main1'></div> */}
+    </div>
 
-    {/* <div className="container">
-  <div className="row">
-    <div className="col-md-4"> 
-    <img src="https://codingapple1.github.io/shop/shoes1.jpg" width="100%"></img>
-    <h4>상품명</h4>
-    <p>상품설명&가격</p></div>
-    <div className="col-md-4"> 
-    <img src="https://codingapple1.github.io/shop/shoes2.jpg" width="100%"></img>
-    <h4>상품명</h4>
-    <p>상품설명&가격</p></div>
-    <div className="col-md-4"> 
-    <img src="public\logo512.png" width="100%"></img>
-    <h4>상품명</h4>
-    <p>상품설명&가격</p></div> */}
+    <br></br>
+
+    <div className='card-product'>
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card>
+    <li></li>
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card>
+    <li></li>
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card>
+    <li></li>
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card>
+    </div>
 
           </div>
         </div>  
       </div>
-    </div>
-  </div>
+  //   </div>
+  // </div>
   );
 }
 
