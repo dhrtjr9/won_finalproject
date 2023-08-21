@@ -9,6 +9,15 @@
   margin:0 auto;
   padding: 46px;;
 }
+.won-font{
+  color: white;
+  text-align: center;
+  font-family: Inter;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 24px; /* 60% */
+}
 
 .won-nav {
   max-width : 1440px;
@@ -28,6 +37,15 @@
 
 .card-parent {
   display: flex;
+  color: #000;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Inter;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 117.647% */
+  letter-spacing: -0.24px;
 }
 
 .card-main{
@@ -60,6 +78,10 @@
   margin: 0 0 48px;
   flex-direction: row;
 }
+
+/* .main-card-img{
+  background-image: url('./images/recom_io.jpg');
+} */
 
 d-block w-100{
   height: 300px;
