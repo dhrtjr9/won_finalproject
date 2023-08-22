@@ -31,9 +31,11 @@ function App() {
 
           </Nav>
           <form class="d-flex">
-            <Nav.Link href="#regist">회원가입</Nav.Link>
+            {/* <Nav.Link href="#regist">회원가입</Nav.Link> */}
+            <Nav.Link onClick={()=>{ navigate('/regist') }}>회원가입</Nav.Link>
             <li></li>
-            <Nav.Link href="#login">로그인</Nav.Link>
+            {/* <Nav.Link href="#login">로그인</Nav.Link> */}
+            <Nav.Link onClick={()=>{ navigate('/login') }}>로그인</Nav.Link>
           </form>
         </Container>
       </Navbar>
@@ -51,7 +53,7 @@ function App() {
        
       <div className='card-parent'>
         <Card style={{ width: '36rem' }}>
-        <Card.Img variant="top" src="./images/recom_image2.jpg" height="270"/>
+        <Card.Img className='card-sep' variant="top" src="./images/recom_image2.jpg" height="270"/>
           <Card.Body>
             <Card.Text>
             비회원도 이용할 수 있는 신용카드 추천 서비스 <br></br>
@@ -64,7 +66,7 @@ function App() {
         </Card>
         <li></li>
         <Card style={{ width: '36rem' }}>
-          <Card.Img variant="top" src="./images/recom_image1.jpg" height="270"/>
+          <Card.Img  className='card-sep' variant="top" src="./images/recom_image1.jpg" height="270"/>
           <Card.Body>
             <Card.Text>
             나와 적합한 신용카드와 카드 분석 리포트까지 <br></br>
@@ -135,6 +137,7 @@ function App() {
         <Route path='/credit' element={<Credit/>}/>
         {/* // 카드 상품 내 상세페이지 */}
         <Route path='/credit_modal' element={<credit/>} />
+        <Route path='/login' element={<login/>}/>
       </Routes>
 
       
